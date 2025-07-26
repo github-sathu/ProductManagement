@@ -31,6 +31,7 @@ It connects with the backend REST API to perform operations like creating, updat
 [Click here to view the site](https://github-sathu.github.io/frontend-product-management/) <!-- Replace with your actual deployed URL -->
 
 ## 📁 Project Structure:
+📁 frontend-product-management
 ├── index.html
 ├── style.css
 └── script.js
