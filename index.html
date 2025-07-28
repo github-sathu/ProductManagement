@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Product Management</h2>
+
+    <form id="productForm">
+      <input type="number" id="id" placeholder="Product ID" required />
+      <input type="text" id="name" placeholder="Product Name" required />
+      <input type="number" id="quantity" placeholder="Quantity" required />
+      <select id="stock" required>
+        <option value="">-- Select Stock --</option>
+        <option value="In Stock">In Stock</option>
+        <option value="Out of Stock">Out of Stock</option>
+      </select>
+      <button type="submit">Save</button>
+      <button type="button" id="updateBtn" style="display: none;">Update</button>
+    </form>
+
+    <div id="message"></div>
+
+    <table id="productlist">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Stock</th>
+		  <th>Action</th>
+		  
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
