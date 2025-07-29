@@ -114,11 +114,20 @@ function editProduct(id) {
 }
 
 // Delete product
-function deleteStudent(index) {
-    students.splice(index, 1);
-    renderTable();
-    showMessage("🗑️ Student deleted successfully!", "success");
+function deleteProduct(id) {
+  fetch(`http://localhost:8016/product/${id}`, {
+    method: "DELETE"
+  })
+    .then(() => {
+      showMessage("🗑️ Product deleted!", "success");
+      fetchAllProducts();
+    })
+    .catch(err => {
+      console.error(err);
+      showMessage("❌ Delete failed.", "error");
+    });
 }
+
 // Show update button or not
 function toggleUpdateButton(show) {
   document.getElementById("updateBtn").style.display = show ? "inline-block" : "none";
