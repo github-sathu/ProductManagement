@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  background-color: #f0f2f5;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#message {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+#message.success {
+  color: green;
+}
+
+#message.error {
+  color: red;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #eee;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+
+.actions button {
+  margin-right: 5px;
+}
